@@ -1,0 +1,160 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.blinking-word {
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #000000;
+    /* Scary orange color, adjust as needed */
+    text-shadow: 0 0 20px #b700ff, 0 0 30px #fc00b0;
+    /* Text shadow for a scarier effect */
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.quote-container {
+    border: 3px solid #02f2ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(3, 175, 255, 0.8);
+    display: inline-flex;
+    flex-direction: column;
+    /* Align contents vertically within each quote-container */
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 200px;
+    height: 200px;
+    border: 5px solid #00e6fb;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 251, 255, 0.8);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    /* Adjust the gap between buttons as needed */
+}
+
+button {
+    background-color: transparent;
+    /* Transparent background */
+    color: #fff;
+    border: 2px solid #00eaff;
+    /* Border color matches the button color */
+    border-radius: 15px;
+    /* Rounded edges */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #faa6e5;
+    /* Background color on hover */
+    border-color: #00ffff;
+    /* Darker border color on hover */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.final-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.final-button {
+    background-color: #05f7ff;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    /* Rounded edges */
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.final-button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}

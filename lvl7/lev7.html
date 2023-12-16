@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>challenge #7</h1>
+
+    <p>
+        Bienvenido a mi sesión de baile, debes tener rodillas <br>flexibles y la contraseña para unirte. Está oculta
+        <br>en este
+        video, encuéntrala para unirte.
+
+    </p>
+    <video width="320" height="240" controls autoplay>
+        <source src="ss.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <br>
+    <a href="ss.mp4" download="flexion.mp4">
+        <button>Download Photo</button>
+    </a>
+    <button
+        onclick="alert('un miembro aleatorio de la clase de baile: i was once in your place i ll give you help,first there is only ONE password ,i forgot if it is flexible or dancing.second you need to learn spanish.third u need openpuff to....oh no! the coach is comming i can t tell you more ,good luck brother')"
+        class="alert-btn">hint</button>
+    <br>
+
+    <label for="userInput">flag:</label>
+    <input type="text" id="sentenceInput" placeholder="Type something...">
+
+    <br>
+
+    <button onclick="verifyAndRedirect()">confirm</button>
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>

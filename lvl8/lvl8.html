@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="blinking-word">final challenge</h1>
+
+    <div class="container">
+        <!-- Quote 1 -->
+        <div class="quote-container">
+            <div class="image-container">
+                <img src="img1.jpg" alt="Image 1">
+                <p>
+                    <a href="fake1.txt" download="itsnotanimage.txt"><button>download</button></a>
+                    <button onclick="alert('save mee ...')">hint</button>
+                </p>
+                <input type="text" placeholder="flag1..." id="sentenceInput1">
+                <button onclick="verifyAndRedirect1()">Submit</button>
+            </div>
+        </div>
+
+        <!-- Quote 2 -->
+        <div class="quote-container">
+            <div class="image-container">
+                <img src="img2steg.jpg" alt="Image 2">
+                <p>
+                    <a href="img2steg.jpg" alt="image2.jpg"><button>download</button></a>
+                    <button onclick="alert('I SAID SAVE MEEE!!!!!!')">hint</button>
+                </p>
+                <input type="text" placeholder="flag2..." id="sentenceInput2">
+                <button onclick="verifyAndRedirect2()">Submit</button>
+            </div>
+        </div>
+
+        <!-- Quote 3 -->
+        <div class="quote-container">
+            <div class="image-container">
+                <img src="img3.jpg" alt="Image 3">
+                <p>
+                    <a href="troll.txt" alt="image3.txt"><button>download</button></a>
+                    <button
+                        onclick="alert('we don\'t have more hints save me please I don\'t wanna die :\'(')">hint</button>
+                </p>
+                <input type=" text" placeholder="flag3..." id="sentenceInput3">
+                <button onclick="verifyAndRedirect3()">Submit</button>
+            </div>
+        </div>
+
+        <!-- Single Input and Button Below All Quotes -->
+        <input class="final-input" type="text" placeholder="final flag" id="sentenceInput4">
+        <br>
+        <button class="final-button" onclick="verifyAndRedirect4()">Final Submit</button>
+        <br>
+        <p style="color: transparent;">cybersicca{finally_the troll_is_over}</p>
+    </div>
+    <script src="js.js"></script>
+
+
+</body>
+
+</html>
